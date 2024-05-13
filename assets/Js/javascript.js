@@ -31,6 +31,9 @@ var swiper = new Swiper(".news-slider", {
     slidesPerView: 3,
     spaceBetween: 32,
     loop: true,
+    autoplay: {
+      delay: 3000,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

@@ -52,6 +52,9 @@ header .row .nav-links ul li a{
     line-height: 21px;
     text-transform: uppercase;
 }
+header .row .nav-links ul li .h-link{
+    color: #FF0000;
+}
 header .row .nav-links ul li a:hover{
     color: #FF0000;
     transition: 0.9s;
@@ -68,6 +71,7 @@ header .row .right-btn a{
 header .row .right-btn a:hover{
     background-color: #FF0000;
     transition: 0.9s;
+    border: 1px solid #FF0000;
 }
 /* --- Close Css Header ----*/
 /* --- Start  Css Home Banner ----*/
@@ -78,7 +82,7 @@ header .row .right-btn a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 250px 0px 195px 0px;
+    padding: 250px 0px 193px 0px;
 }
 .home-banner .c-banner {
     text-align: center;
@@ -118,14 +122,16 @@ header .row .right-btn a:hover{
     padding: 15px 20px;
     background-color: #FF0000;
     color: #fff;
+    border: 1px solid #FF0000;
     text-transform: uppercase;
     display: inline-block;
     margin-top: 40px;
 }
 .home-banner .c-banner .c-btns:hover{
-    background-color: #FFFFFF;
+    background-color: transparent;
     transition: 0.9s;
-    color: #FF0000;
+    color: #FFF;
+    border: 1px solid #fff;
 }
 /* --- Close Css Home Banner ----*/
 /* --- Start Css Section One----*/
@@ -198,7 +204,7 @@ header .row .right-btn a:hover{
 .section-two .swiper-slide .card .top-content{
     background-color: #000000;
     text-align: left;
-    padding: 25px 0px 25px 30px;
+    padding: 25px 0px 26px 30px;
 }
 .section-two .swiper-slide .card .top-content h3{
     font-size: 22px;
@@ -301,6 +307,7 @@ header .row .right-btn a:hover{
     color: #FFFFFF;
     max-width: 232px;
     margin: 0 auto;
+    text-align: left;
 }
 .section-three .row .box-one .bottom{
     background-color: #FF0000;
@@ -376,7 +383,7 @@ header .row .right-btn a:hover{
 /* --- Close Css Section Three----*/
 /* --- Start Css Section Four----*/
 .section-four {
-    padding: 85px 0px 42px 0px;
+    padding: 83px 0px 42px 0px;
     background-color: #000000;
 }
 .section-four .one-row {
@@ -453,12 +460,14 @@ header .row .right-btn a:hover{
     font-family: AkiraExpanded;
     color: #FFFFFF;
 }
+.section-four .second-row .t-one{
+    border-bottom: 1px solid #2D2D2D;
+}
 .section-four .second-row .t-data .row{
     display: flex;
     align-items: center;
     opacity: 20%;
-    border-bottom: 1px solid #2D2D2D;
-    padding: 27px 0px 7px 0px;
+    padding: 27px 0px 8px 0px;
     grid-gap: 0px 66px;
     justify-content: center;
 }
@@ -467,7 +476,7 @@ header .row .right-btn a:hover{
     align-items: center;
     opacity: 1;
     border-bottom: 1px solid #2D2D2D;
-    padding: 17px 0px 7px 0px;
+    padding: 17px 0px 9px 0px;
     grid-gap: 0px 59px;
     justify-content: center;
 }
@@ -645,13 +654,15 @@ header .row .right-btn a:hover{
 }
 .section-five .row{
     display: grid;
-    grid-template-columns: 0.64fr 0.5fr
+    grid-template-columns: 0.674fr 0.5fr;
+    grid-gap: 0px 33px;
 }
 .section-five .row .left img{
     max-width: 100%;
+    height: 100%;
 }
 .section-five .row .right {
-    padding: 128px 0px 0px 30px;
+    padding: 128px 0px 0px 0px;
 }
 .section-five .row .right a i {
     color: #FFFFFF;
@@ -672,6 +683,7 @@ header .row .right-btn a:hover{
     font-weight: 800;
     font-family: AkiraExpanded;
     line-height: 27px;
+    border: 1px solid #FF0000;
     display: inline-block;
     text-decoration: none;
     margin-top: 62px;
@@ -686,11 +698,12 @@ header .row .right-btn a:hover{
 /* --- Start Css Section six----*/
 .section-six .row{
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #FF0000;
+    position: relative;
 }
 .section-six .row .left{
-    padding: 181px 120px 206px 112px;
+    padding: 180px 128px 180px 128px;
 }
 .section-six .row .left .l-text h3{
    font-size: 80px;
@@ -706,7 +719,8 @@ header .row .right-btn a:hover{
 .section-six .row .left .l-social ul{
     list-style-type: none;
     display: flex;
-    grid-gap: 0px 15px;;
+    grid-gap: 0px 15px;
+    align-items: center;
 }
 .section-six .row .left .l-social ul li a{
    text-decoration: none;
@@ -714,10 +728,15 @@ header .row .right-btn a:hover{
    background-color: #FFFFFF;
    padding: 27px 26px 27px 26px;
 }
-.section-six .row .left .l-social ul li a:hover{
-    background-color: #FF0000;
-    transition: 0.9s;
-    color: #FFFFFF;
+.section-six .row .left .l-social ul li a .svg-games {
+    padding: 26px 26px 26px 26px;
+}
+.section-six .row .left .l-social ul li .games img{ 
+    max-width: 25%;
+}
+.section-six .row .left .l-social ul li .games{ 
+    background-color: #FFFFFF;
+    padding: 25px 26px 29px 26px;
 }
 .section-six .row .left .l-social ul li a i{
     font-size: 20px;
@@ -735,7 +754,7 @@ header .row .right-btn a:hover{
 /* --- Close Css Section six----*/
 /*--- Start Css Footer ----*/
 footer {
-    padding: 131px 0px 26px 0px;
+    padding: 166px 0px 26px 0px;
     background-color: #000000;
 }
 footer .row {
@@ -751,11 +770,20 @@ footer .row .f-img img {
 footer .row .f-socials {
     margin-top: 57px;
 }
+footer .row .f-socials::after {
+    content: "";
+    display: block;
+    width: 58%;
+    height: 1px;
+    background-color: #2D2D2D;
+    margin: auto;
+}
 footer .row .f-socials ul{
     list-style-type: none;
     display: flex;
     grid-gap: 0px 41px;
     justify-content: center;
+    margin-bottom: 23px;
 }
 footer .row .f-socials ul li a{
     color: #fff;
@@ -767,7 +795,7 @@ footer .row .f-menu{
     border-bottom: 1px solid #2D2D2D;
 }
 footer .row .f-menu {
-    margin-top: 54px;
+    margin-top: 30px;
 }
 footer .row .f-menu ul{
     list-style-type: none;
@@ -787,7 +815,7 @@ footer .row .f-menu ul li a{
 footer .row .f-copyright {
     padding-top: 30px;
 }
-footer .row .f-copyright {
+footer .row .f-copyright p{
     font-size: 14px;
     font-family: AkiraExpanded;
     font-weight: 800;
@@ -806,10 +834,6 @@ footer .row .f-copyright p a:hover{
     transition: 0.9s; 
 }
 footer .row .f-menu ul li a:hover{
-    color: #FF0000;
-    transition: 0.9s; 
-}
-footer .row .f-socials ul li a:hover{
     color: #FF0000;
     transition: 0.9s; 
 }
